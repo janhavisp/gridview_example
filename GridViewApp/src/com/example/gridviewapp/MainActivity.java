@@ -2,6 +2,7 @@ package com.example.gridviewapp;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,6 +25,9 @@ public class MainActivity extends Activity {
 					long id) {
 				
 				
+				Intent i=new Intent(MainActivity.this,SingleViewActivity.class);
+				i.putExtra("id", position);
+				startActivity(i);
 				
 				
 				
